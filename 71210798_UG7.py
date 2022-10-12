@@ -51,3 +51,20 @@ class UndoRedo:
 
     def printInfo(self):
         print("nothing to REDO")
+
+if __name__ == '__main__':
+    obj_undoredo = UndoRedo()
+    obj_undoredo.undo() #Test case Jika belum ada data yang ditambahkan
+    obj_undoredo.redo() #Test case jika belum ada data yang di undo
+    obj_undoredo.write('Pada Suatu Hari hiduplah seorang kakek-kakek')
+    obj_undoredo.write("Dia tinggal sebatang kara di pegunungan")
+    obj_undoredo.write("Dia kemudian turun gunung buat kuliah")
+    obj_undoredo.write("SEMESTER 5 BANYAK TUGASSSSSSS !!!")
+    obj_undoredo.printInfo()
+    obj_undoredo.undo()
+    obj_undoredo.undo()
+    obj_undoredo.undo()
+    obj_undoredo.undo()
+    obj_undoredo.redo()
+    obj_undoredo.redo()
+    obj_undoredo.redo()
